@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yeos</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer> </script>
+</head>
+<body id="root" onload="initialize()">
+    <div id="soy_product">
+    <table class="center">
+        <tr>
+            <td>&nbsp;</td>
+            <td align="center"><h3>Refresh What Matters !</h3></td>
+            <td>&nbsp;</td>
+        </tr>
+    </table>
+
+    <table class="center">
+        <tr>
+                        <td align="center">
+                            <div id="prod_images">
+                                <img src="./images/soy-milk.webp" alt="Soy Milk" width="70%" height="70%"/> 
+                            </div>
+                        </td>
+        </tr>
+    </table>
+
+
+    <table class="center">
+        <tr>
+            <td width="30%">&nbsp;</td>
+            <td width="40%">
+                <div id="prod_description">
+                    <u><b>Yeo’s signature beverage</b> </u>range of well-being, wholesomeness and wisdom. Brewed from time tested recipe, with all its
+                    natural goodness of premium soy.
+                </div>
+            <td>
+            <td width="30%">&nbsp;</td>  
+        </tr>
+    </table>
+    </div>
+    <div id="quiz_start">
+        <table class="center">
+            <tr>
+                <td width="30%">&nbsp;</td>
+                <td width="40%">&nbsp;</td>
+                <td width="30%">&nbsp;</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td align="right">
+                        <b>Do you want to play a quiz! </b>&nbsp;
+                        <input type="button" id="quiz_start" value="Start Quiz!" class="red_button"/>
+                </td>
+                <td>&nbsp;</td>
+            </tr>
+        </table>
+    </div>
+    <div id="qa_div" class="hide">
+    <div id="inst_div" class="rounded-border">
+        <table class="center">
+            <tr>
+                <td align="left">
+                    <h2>Important Instructions:</h2>
+                    <ol>
+                        <li>
+                            There is negative marking. +2 on every correct answer and -1 on wrong one. 
+                        </li>
+                        <li>
+                            There are total 5 questions.
+                        </li>
+                        <li>
+                            In case of same score, winner will be decided based on time taken to answer all the questions.
+                        </li>
+                    </ol>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <br/>
+    <div id="timer_div" class="hide">
+        <table>
+            <tr class="th_wide">
+                <td>
+                    Timer&nbsp;&nbsp;
+                </td>
+                <td>
+                    <div id="minutes">00</div>
+                </td>
+                <td>
+                    :
+                </td>
+                <td>
+                    <div id="seconds">00</div>
+                </td>
+                <td>
+                    :
+                </td>
+                <td>
+                    <div id="milliseconds">000</div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="q_opt_div" class="rounded-border">
+        <table class="center">
+            <tr>
+                <td align="left" width="60%" border="1px"> 
+                    <div id="q_div">
+                        <legend>Sample Question:</legend> <br/>
+                    </div>
+                    <div id="opt_div">
+                        <label>
+                            <input type="radio" name="q1" value="opt1" id="opt1"/>
+                            SampleOpt1
+                        </label>
+                        <label>
+                            <input type="radio" name="q1" value="opt2" id="opt2"/>
+                            SampleOpt2
+                        </label>
+                    </div>
+                    <div id="q_btn_div">
+                        <input type="button" value="Submit" id="sub_ans" class="red_button"/>
+                    </div>
+                </td>
+                <td align="top">
+                    <div id="show_result" class="hide">
+                        Bravo! Your answer is correct. +1
+                    </div>
+                    <div id="error_div" class="hide">
+                        <b><span color='red'>Please select an option.</span></b>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <br/>
+    <div id="footer_div">
+        <table border="0px"> 
+            <tr>
+
+                <td align="right">
+                    <div>
+                        &nbsp;&nbsp;&nbsp;
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <br/><br/>
+</div>
+
+<div id="final_result_div" class="hide">
+    <div class="rounded-border">
+        <table class="center">
+            <tr>
+                <td width="100%" align="center">
+                    <div id='show_fin_result'><h2>Your Final Result: </h2></div>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+</body>
+</html>
